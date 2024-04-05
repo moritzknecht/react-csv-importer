@@ -26,7 +26,8 @@ export interface ImportInfo {
   file: File;
   preview: ImporterFilePreview;
   fields: string[]; // list of fields that user has assigned
-  columnFields: (string | undefined)[]; // per-column list of field names (or undefined if unassigned)
+  columnFields: (string | undefined)[]; // per-column list of field names (or undefined if unassigned),
+  fieldAssignments?:FieldAssignmentMap
 }
 
 export type ImporterContentRenderProp = (info: {
