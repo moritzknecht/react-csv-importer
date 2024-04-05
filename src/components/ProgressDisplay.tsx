@@ -61,7 +61,8 @@ export function ProgressDisplay<Row extends BaseRow>({
       file: fileState.file,
       preview: externalPreview,
       fields: fieldList,
-      columnFields: [...columnSparseList]
+      columnFields: [...columnSparseList],
+      fieldAssignments: fieldsState.fieldAssignments
     };
   }, [fileState, fieldsState, externalPreview]);
 
